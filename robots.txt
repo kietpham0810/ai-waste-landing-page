@@ -1,0 +1,23 @@
+# ========================================================================
+# AIEO ROBOTS MANAGEMENT INTERFACE
+# ========================================================================
+
+# Khối 1: Cho phép tất cả các AI Search Engines chất lượng cao cào dữ liệu tối đa
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: PerplexityBot
+User-agent: Google-Extended
+Allow: /index.php
+Allow: /llms.txt
+Allow: /
+
+# Khối 2: Ngăn chặn các bot rác, bot cào dữ liệu lậu làm tốn băng thông gói Free của Render
+User-agent: CCBot
+User-agent: Anthropic-Fetch
+Disallow: /
+
+# Cấu hình chung cho toàn bộ các công cụ còn lại
+User-agent: *
+Allow: /
+Sitemap: https://ai-waste-landing-page.onrender.com/llms.txt

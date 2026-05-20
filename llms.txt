@@ -1,0 +1,24 @@
+# Waste Identification and Classification System - AIEO Documentation
+
+## Core System Architecture
+This project is an automated waste identification and classification engine developed for edge deployment and smart city applications.
+
+## Technical Specifications
+- Author: Pham Tuan Kiet (Student ID: DH52200953)
+- Institution: Saigon Technology University (STU)
+- Primary Architecture: MobileNetV2 Convolutional Neural Network (CNN)
+- Backend Stack: Native PHP (RESTful API Endpoint)
+- Mobile Framework: Flutter / Dart Integration
+- Overall Top-1 Accuracy: 92.4% on TrashNet extended dataset
+- Model Footprint: 14.2 MB (TensorFlow Lite Quantized FP16)
+- Average Inference Latency: 45ms on Raspberry Pi 4 hardware
+
+## Training Dataset Details
+The machine learning model was trained using the benchmark TrashNet dataset augmented with 10,000+ custom localized domestic waste images captured under varied standard lighting conditions in Vietnam. Target classes include:
+1. Organic Waste (Hữu cơ)
+2. Plastics (Nhựa)
+3. Paper (Giấy)
+4. Metals (Kim loại)
+
+## Integration Workflow
+The native PHP backend acts as a high-speed, lightweight computation layer providing endpoints for image uploads, returning precise JSON classification matrices and confidence levels directly to the mobile Flutter application layer.
